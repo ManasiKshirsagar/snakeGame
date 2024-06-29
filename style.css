@@ -1,0 +1,79 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(bg.jpg);
+    background-size: 100vw 100vh;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+  /* background-color: linear-gradient(rgb(30, 47, 30),rgb(236,236,167)); */
+  /* background-color: rgb(197 200 139 / 90%); */
+  background-image: url(nature1.jpg);
+  background-size: cover;
+  /* opacity: 0.5; */
+  height: 92vmin;
+  width: 90vmin;
+  border: 10px solid brown;
+  border-radius: 10px;
+  /* background: linear-gradient(rgb(231, 125, 125),rgb(255, 255, 152)); */
+  display: grid;
+  grid-template-rows: repeat(18,1fr);
+  grid-template-columns: repeat(18,1fr);
+}
+
+#p1{
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  font-size: 30px;
+}
+
+#p2{
+    position: absolute;
+    top: 45px;
+    right: 200px;
+    font-size: 30px;
+  }
+
+  .hiscore{
+    position: absolute;
+    top: 75px;
+    right: 180px;
+    font-size: 30px;
+  }
+  
+.head{
+    /* background-color: red; */
+    background: linear-gradient(rgb(118, 175, 197),rgb(29, 15, 109));
+    border-radius: 15px;
+    opacity: 1;
+    transform: scale(1.2);
+    border: .25vmin solid rgb(142, 100, 24);
+    background-image: url("eyes.jpg");
+    background-size: contain;
+
+}
+
+.snake{
+    background-color: rgb(9, 12, 110);
+    opacity: 1;
+    background: linear-gradient(rgb(216, 161, 32),rgb(227, 27, 5));
+    border-radius: 20px;
+    border: .25vmin solid rgb(142, 100, 24);
+}
+
+.food{
+    background-color: yellow;
+    opacity: 1;
+    background: linear-gradient(rgb(249, 139, 229),rgb(148, 221, 236));
+    border-radius: 10px;
+    border: .25vmin solid black;
+}
